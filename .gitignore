@@ -1,0 +1,17 @@
+tags
+keyword.server
+*swp
+*.out
+*.o
+*.d
+*.ut
+log
+main
+lib*.a
+*_demo
+segdict*
+prior.gbk
+tmp
+t.*
+*.pid
+build
