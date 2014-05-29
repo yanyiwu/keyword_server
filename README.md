@@ -1,4 +1,4 @@
-# `keyword_server` 中文关键词抽取服务
+# `keyword_server` 微型中文关键词抽取服务
 
 ## Introduction
 
