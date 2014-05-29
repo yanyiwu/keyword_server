@@ -1,4 +1,4 @@
-# `keyword_server` 微型中文关键词抽取服务
+# 微型中文关键词抽取服务
 
 ## Introduction
 
@@ -15,7 +15,7 @@
 + 支持`utf-8`编码。
 + 使用 `TF-IDF` 抽取算法。
 
-## Usage & Example
+## Usage
 
 ### Dependency
 
@@ -35,7 +35,7 @@ make
 ./keyword.server
 ```
 
-#### testing server
+### testing server
 
 ```
 ./curl.sh
