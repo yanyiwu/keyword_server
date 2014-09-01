@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/aszxqw/keyword_server.png?branch=master)](https://travis-ci.org/aszxqw/keyword_server)
+- - -
+
 # 微型中文关键词抽取服务
 
 ## Introduction

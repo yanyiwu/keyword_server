@@ -1,0 +1,12 @@
+language: cpp
+script: 
+  - make
+compiler:
+  - clang
+  - gcc
+notifications:
+  recipients:
+    - wuyanyi09@foxmail.com
+  email:
+    on_success: change
+    on_failure: always
