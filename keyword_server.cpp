@@ -3,13 +3,15 @@
 #include <string>
 #include <ctype.h>
 #include <string.h>
-#include "Husky/EpollServer.hpp"
+#include "Husky/ThreadPoolServer.hpp"
 #include "KeywordExtractor.hpp"
 
 using namespace Husky;
 using namespace CppJieba;
 
 const size_t PORT = 11201;
+const size_t THREAD_NUMBER = 4;
+const size_t QUEUE_MAX_SIZE = 256;
 const char* const DICT_PATH = "./dict/dict.utf8";
 const char* const MODEL_PATH = "./dict/hmm_model.utf8";
 const char* const IDF_PATH = "./dict/idf.utf8";
@@ -43,7 +45,7 @@ class ReqHandler: public IRequestHandler
 int main(int argc, char* argv[])
 {
     ReqHandler reqHandler(DICT_PATH, MODEL_PATH, IDF_PATH, STOP_WORDS_PATH);
-    EpollServer server(PORT, reqHandler);
+    ThreadPoolServer server(THREAD_NUMBER, QUEUE_MAX_SIZE, PORT, reqHandler);
     server.start();
     return EXIT_SUCCESS;
 }
