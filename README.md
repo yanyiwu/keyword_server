@@ -3,7 +3,7 @@
 
 # 微型中文关键词抽取服务
 
-## Introduction
+## 简介
 
 `keyword_server` 是一个基于 [CppJieba] 包装而成 **中文关键词抽取服务** 。
 
@@ -13,18 +13,18 @@
 
 这样好处也很明显，代码清凉解暑，不到50行代码的 `server.cpp` 就可以编译出一个 **中文关键词抽取服务** 。
 
-## Feature
+## 特性
 
 + 支持`utf-8`编码。
 + 使用 `TF-IDF` 抽取算法。
 
-## Usage
+## 用法
 
-### Dependency
+### 依赖
 
 * `g++ (version >= 4.1 recommended) or clang++`;
 
-### Download
+### 下载
 
 ```sh
 git clone git://github.com/aszxqw/keyword_server.git
@@ -32,21 +32,23 @@ cd keyword_server
 make
 ```
 
-### server start
+### 启动服务
 
 ```
 ./keyword.server
 ```
 
-### testing server
+### Demo脚本 
 
 ```
-./curl.sh
+./curl.demo
 ```
 
-## Contact
+## 客服
 
-I will appreciate that if you issue any question or send mails to me (`wuyanyi09@foxmail.com`).
+```
+i@yanyiwu.com
+```
 
 [CppJieba]:https://github.com/aszxqw/cppjieba
 [simhash]:https://github.com/aszxqw/simhash
