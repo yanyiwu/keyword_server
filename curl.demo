@@ -1,3 +1,6 @@
+#GET
 curl -G "http://127.0.0.1:11201" --data-urlencode "sentence=我是蓝翔技工拖拉机学院手扶拖拉机专业的。  不用多久， 我就会升职加薪，当上总经理，出任CEO，走上人生巅峰。"
 curl -G "http://127.0.0.1:11201" --data-urlencode "sentence=我是蓝翔 技工拖拉机学院手扶拖拉机专业的"
 curl -G "http://127.0.0.1:11201" --data-urlencode "sentence='我是蓝翔 技工拖拉机学院手扶拖拉机专业的。'"
+#POST
+curl -d "我是蓝翔 技工拖拉机学院手扶拖拉机专业的。" "http://127.0.0.1:11201"

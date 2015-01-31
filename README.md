@@ -17,6 +17,7 @@
 
 + 支持`utf-8`编码。
 + 使用 `TF-IDF` 抽取算法。
++ 支持 GET 和 POST 请求。
 
 ## 用法
 
@@ -44,6 +45,8 @@ make
 ```
 ./curl.demo
 ```
+ 
+curl.demo 里面包含 GET 和 POST 请求 。
 
 ## 客服
 

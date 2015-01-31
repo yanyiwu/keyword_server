@@ -31,12 +31,15 @@ class ReqHandler: public IRequestHandler
             httpReq.GET("sentence", tmp);
             URLDecode(tmp, sentence);
             _keyword.extract(sentence, words, TOP_N);
-            join(words.begin(), words.end(), strSnd, " ");
+            strSnd << words;
             return true;
         }
         virtual bool do_POST(const HttpReqInfo& httpReq, string& strSnd) const
         {
-            return false; 
+            vector<pair<string,double> > words;
+            _keyword.extract(httpReq.getBody(), words, TOP_N);
+            strSnd << words;
+            return true; 
         }
     private:
         KeywordExtractor _keyword;
