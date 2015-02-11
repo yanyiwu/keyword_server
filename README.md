@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/aszxqw/keyword_server.png?branch=master)](https://travis-ci.org/aszxqw/keyword_server)
+[![Build Status](https://travis-ci.org/yanyiwu/keyword_server.png?branch=master)](https://travis-ci.org/yanyiwu/keyword_server)
 - - -
 
 # 微型中文关键词抽取服务
@@ -28,7 +28,7 @@
 ### 下载
 
 ```sh
-git clone git://github.com/aszxqw/keyword_server.git
+git clone git://github.com/yanyiwu/keyword_server.git
 cd keyword_server
 make
 #如果是MacOSX用户，请使用 make osx 。
@@ -55,5 +55,5 @@ curl.demo 里面包含 GET 和 POST 请求 。
 i@yanyiwu.com
 ```
 
-[CppJieba]:https://github.com/aszxqw/cppjieba
-[simhash]:https://github.com/aszxqw/simhash
+[CppJieba]:https://github.com/yanyiwu/cppjieba
+[simhash]:https://github.com/yanyiwu/simhash
