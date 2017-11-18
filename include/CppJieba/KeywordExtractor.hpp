@@ -20,8 +20,9 @@ namespace CppJieba
 
             unordered_set<string> _stopWords;
         public:
-            KeywordExtractor(){};
+            KeywordExtractor() : _idfAverage(0){};
             KeywordExtractor(const string& dictPath, const string& hmmFilePath, const string& idfPath, const string& stopWordPath)
+             : _idfAverage(0)
             {
                 LIMONP_CHECK(init(dictPath, hmmFilePath, idfPath, stopWordPath));
             };
